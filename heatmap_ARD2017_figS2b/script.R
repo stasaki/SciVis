@@ -1,6 +1,6 @@
 
 library(tidyverse)
-ds = readRDS(file="~/Resource/SciVis/heatmap_ARD_figS2b/ds.rds")
+ds = readRDS(file="~/Resource/SciVis/heatmap_ARD2017_figS2b/ds.rds")
 
 theme_Publication <- function(base_size=14, base_family="Helvetica") {
   library(grid)
@@ -54,4 +54,4 @@ ds%>%
   theme(axis.text.x = element_text(angle = 90, hjust = 1,vjust=0.5))+
   coord_flip() -> p
 
-ggsave(plot = p, filename = "~/Resource/SciVis/heatmap_ARD_figS2b/plot.pdf",width = 6,height = 7)
+ggsave(plot = p, filename = "~/Resource/SciVis/heatmap_ARD2017_figS2b/plot.png",width = 6,height = 7)
